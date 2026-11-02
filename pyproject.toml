@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vpn-cli"
+version = "1.0.0"
+description = "Free VPN CLI powered by Cloudflare WARP"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+
+[project.scripts]
+vpn = "vpn_cli.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["vpn_cli*"]
