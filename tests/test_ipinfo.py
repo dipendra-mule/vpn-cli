@@ -9,13 +9,13 @@ class TraceParsingTests(unittest.TestCase):
             "fl=abc123\n"
             "h=www.cloudflare.com\n"
             "ip=2001:db8::1\n"
-            "loc=IN\n"
+            "loc=XX\n"
             "colo=XXX\n"
             "warp=off\n"
         )
         parsed = ipinfo.parse_trace(text)
         self.assertEqual(parsed["ip"], "2001:db8::1")
-        self.assertEqual(parsed["loc"], "IN")
+        self.assertEqual(parsed["loc"], "XX")
         self.assertEqual(parsed["colo"], "XXX")
         self.assertEqual(parsed["warp"], "off")
 

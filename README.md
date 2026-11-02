@@ -131,10 +131,10 @@ events. It never stores credentials or tokens and is written with mode `0600`.
 ## Limitations
 
 - WARP egress IPs are shared. Some sites may show a CAPTCHA or block them.
-- You cannot choose an exit country; Cloudflare uses the nearest PoP
+- You cannot choose an exit country; Cloudflare uses the nearest PoP.
 - Reconnects may reuse the same egress IP. `vpn rotate` is best effort.
 - WARP is a privacy tunnel, not an anonymity tool.
-- Concurrent VPNs (for example the another VPN app) can conflict. `vpn doctor`
+- Concurrent VPNs (for example another VPN app) can conflict. `vpn doctor`
   warns you when another VPN is connected.
 
 ## Troubleshooting
@@ -159,8 +159,8 @@ vpn status
   vpn reconnect
   ```
 
-- **Another VPN connected**: disconnect it first; macOS runs one
-  VPN tunnel at a time.
+- **Another VPN connected**: disconnect it first; macOS runs one VPN tunnel
+  at a time.
 
 ## Uninstall
 
